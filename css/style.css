@@ -1,10 +1,9 @@
-
 */
 
 body {
   background-color: #ffffff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+ 
   font-size: 16px;
   color: #555;
   -webkit-font-smoothing: antialiased;
@@ -14,9 +13,10 @@ body {
 /* Titles */
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cinzel', serif;
-  font-weight: 300;
+  font-family: 'Shippori Mincho', serif;
+  font-weight: 500;
   color: #333;
+  text-decoration: none;
 }
 
 /* p tag styling */
@@ -92,15 +92,17 @@ hr {
   margin-top: 150px;
   color: white;
   font-size: 70px;
-  font-weight: 700;
+  font-weight: 400;
+  text-shadow: 2px 2px #0000005e;
+
 }
 
 #headerwrap h3 {
   color: white;
+  font-weight: 400;
   font-size: 30px;
-  font-weight: 100;
-  font-family: 'Raleway', sans-serif;
-  font-style: oblique;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 2px 2px #0000005e;
 }
 
 #headerwrap .logo {
@@ -121,7 +123,7 @@ hr {
 #f h3 {
   color: white;
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 
@@ -166,9 +168,9 @@ hr {
 }
 
 .menu h1.logo {
-  font-family: 'Cinzel', serif;
+  font-family: 'Shippori Mincho', serif;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.15em;
   line-height: 40px;
   text-transform: uppercase;
@@ -191,7 +193,7 @@ hr {
   color: #808080;
   display: block;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 40px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
