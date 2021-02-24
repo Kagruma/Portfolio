@@ -40,11 +40,12 @@ a {
   -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
   -o-transition: color 0.1s ease-in, background 0.1s ease-in;
   transition: color 0.1s ease-in, background 0.1s ease-in;
+  text-decoration: underline;
 }
 
 a:hover, a:focus {
   color: #7b7b7b;
-  text-decoration: none;
+  text-decoration: underline;
   outline: 0;
 }
 
@@ -301,8 +302,89 @@ hr {
 }
 
 
+/* card stuff */
+.product-grid{ font-family: 'Shippori Mincho', serif; }
+.product-grid .product-image{
+    position: relative;
+    overflow: hidden;
+}
+.product-grid .product-image a.img { 
+  display: block; 
+  font-size: 30px;
+  
+}
+
+.product-grid .product-image img{
+    width: 100%;
+    height: auto;
+    
+}
+.product-image .pic-1{ transition: all 0.5s; }
+.product-grid:hover .product-image .pic-1{ filter: blur(10px) brightness(0.7); 
+}
+.product-grid .product-links{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    
+}
+.product-grid .product-links li{
+    margin: 0 0 5px 0;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all .2s ease-in-out .1s;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.product-grid:hover .product-links li:nth-child(2){ transition: all .2s ease-in-out .2s; }
+.product-grid:hover .product-links li:nth-child(3){ transition: all .2s ease-in-out .3s; }
+.product-grid .product-links li:last-child{ margin-bottom: 0; }
+.product-grid:hover .product-links li{
+    opacity: 1;
+    transform: translateY(0);
+}
+.product-grid .product-links li a{
+    color: #fff;
+    line-height: 50px;
+    height: 50px;
+    width: 100px;
+    border: 1px solid #fff;
+    display: inline-block;
+    transition: all .2s ease-in-out .1s;
+    font-size: 16px;
+    text-decoration: none;
+    
+}
 
 
+.product-grid .product-links li a:hover{
+    background: rgb(148, 21, 21);
+    border: 1px solid #bf3d3e;
+    
+}
+.product-grid .product-content{ padding: 15px 0 0; }
+.product-grid .title{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0 0 5px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.product-grid .title a{
+    color: rgb(148, 21, 21);
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+@media screen and (max-width:990px){s
+    .product-grid{ margin: 0 0 30px; }
+}
 
 @-webkit-keyframes animate-loading {
   0% {
@@ -340,6 +422,10 @@ hr {
 
 #footerstuff a {
   color: red;
+}
+
+#footerstuff a:hover {
+  color: rgb(255, 255, 255);
 }
 
 #footerstuff p {
