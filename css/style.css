@@ -32,7 +32,7 @@ p {
 /* Link styling :o */
 
 a {
-  color: rgb(148, 21, 21);
+  color: rgb(255, 64, 64);
   word-wrap: break-word;
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
   -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -152,6 +152,7 @@ hr {
   display: block;
   max-width: 500px;
   bottom: 0%;
+  width: 100%;
 }
 
 /* nav bar stuff*/
@@ -209,10 +210,12 @@ hr {
   line-height: 40px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .menu a:hover {
-  color: rgb(148, 21, 21);
+  color: rgb(255, 64, 64);
+  text-decoration: underline;
 }
 
 .menu a:active {
@@ -289,7 +292,7 @@ hr {
   display: block;
   text-align: center;
   font-size: 20px;
-  color: rgb(148, 21, 21);
+  color: rgb(255, 64, 64);
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -363,7 +366,7 @@ hr {
     color: #fff;
     line-height: 50px;
     height: 50px;
-    width: 100px;
+    width: 250px;
     border: 1px solid #fff;
     display: inline-block;
     transition: all .2s ease-in-out .1s;
@@ -374,7 +377,7 @@ hr {
 
 
 .product-grid .product-links li a:hover{
-    background: rgb(148, 21, 21);
+    background: rgb(255, 64, 64);
     border: 1px solid #bf3d3e;
     
 }
@@ -388,7 +391,7 @@ hr {
     
 }
 .product-grid .title a{
-    color: rgb(148, 21, 21);
+    color: rgb(255, 64, 64);
     transition: all 0.3s ease 0s;
     text-decoration: none;
 }
@@ -432,7 +435,7 @@ hr {
 }
 
 #footerstuff a {
-  color: rgb(148, 21, 21);
+  color: rgb(255, 64, 64);
 }
 
 #footerstuff a:hover {
