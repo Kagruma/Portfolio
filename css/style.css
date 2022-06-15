@@ -57,7 +57,7 @@ a:before, a:after {
 }
 
 hr {
-  display: block;
+  display: inline-block;
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
@@ -70,9 +70,8 @@ hr {
 
 
 #headerwrap {
-  background: url(../img/header-bg.png) no-repeat center top;
+  background: url(../img/header-bg.png) no-repeat right top;
   margin-top: -10px;
-  padding-top: 20px;
   text-align: center;
   background-attachment: relative;
   background-position: center center;
@@ -94,12 +93,15 @@ hr {
   font-size: 50px;
   font-weight: 400;
   text-shadow: 2px 2px #0000005e;
-  margin-bottom: 50px
-
 }
 
+#headerwrap h2 {
+  color: whitesmoke;
+}
+
+
 #headerwrap h3 {
-  color: white;
+  color: rgb(255, 64, 64);
   font-weight: 400;
   font-size: 30px;
   font-family: 'Montserrat', sans-serif;
@@ -112,13 +114,38 @@ hr {
   margin-top: 15px;
 }
 
+.bio-card{
+  margin-top:10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: block;
+  align-content: center;
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.icon img {
+  align-content:center;
+  max-width: 400px;
+  bottom: 0%;
+  width: 100%;
+}
+
 /* Footer Wrap */
 
 #f {
   background: #050505;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   text-align: center
+}
+
+#f h2{
+  color: whitesmoke;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 #f h3 {
@@ -127,6 +154,7 @@ hr {
   font-weight: 400;
   letter-spacing: 1px;
 }
+
 
 #f i {
   font-size: 8px;
@@ -139,20 +167,18 @@ hr {
   color: #f2f2f2;
 }
 
-/* #f img {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  max-width: 500px;
+#f li {
+  font-size: 16px;
+  color: rgba(255, 101, 101, 0.616);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
 
-} */
-.logo img {
+#f ul {
+  display:inline-block;
   margin-left: auto;
   margin-right: auto;
-  display: block;
-  max-width: 500px;
-  bottom: 0%;
-  width: 100%;
+  align-content: center;
 }
 
 /* nav bar stuff*/
@@ -190,6 +216,7 @@ hr {
   color: #ffffff;
   margin-top: 20px;
   padding: 10px;
+  margin-left: 10px;
 }
 
 .menu h1.logo a:hover {
@@ -424,6 +451,44 @@ hr {
   }
 }
 
+/* CARD STYLING */
+#card {
+  max-width: 450px;
+  max-height: 225px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: #292929;
+  box-shadow: -20px 0 35px -25px black, 20px 0 35px -25px black;
+  z-index: 5;
+}
+
+#card h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255, 255, 255);
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 15pt;
+}
+
+#card p {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+#card a {
+  color: rgb(255, 190, 255);
+}
+
+#card a:hover {
+  color: rgb(255, 255, 255);
+}
+
+#card span {
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 /* footer */
 
@@ -446,11 +511,15 @@ hr {
   margin-bottom: 5px;
 }
 
+#contact a {
+  font-size: 30px;
+}
+
 
 @media screen and (max-width:690px) {
   .resume{
     align-items: center;
-    max-width: 500px;
+    max-width: 300px;
     width: 95%;
     height: 50%;
   }
